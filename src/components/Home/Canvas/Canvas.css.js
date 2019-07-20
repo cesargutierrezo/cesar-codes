@@ -27,4 +27,5 @@ export const CanvasSt = styled.canvas`
   user-select: none;
   touch-action: none;
   animation: ${opacityAnim} ${p => p.fadeInterval}ms ease-in-out infinite;
+  z-index: -1;
 `

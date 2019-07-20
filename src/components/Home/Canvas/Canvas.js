@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import useInterval from "../../hooks/useInterval"
+import useInterval from "../../../hooks/useInterval"
 import { drawCanvas, CANVAS_INTERVAL_DELAY } from "./utils"
 import { CanvasSt } from "./Canvas.css"
 
@@ -12,8 +12,17 @@ export const Canvas = () => {
     drawCanvas(canvasRef.current)
   }
 
+  const onMount = () => {
+    updateCanvas()
+    console.log(
+      `Canvas logic originally by Gerard Ferrandez (https://codepen.io/ge1doot/).
+
+Taken from https://codepen.io/ge1doot/pen/KemEax and adapted to React`
+    )
+  }
+
   /* Hooks */
-  useEffect(updateCanvas, [])
+  useEffect(onMount, [])
   useInterval(updateCanvas, CANVAS_INTERVAL_DELAY)
   const canvasRef = useRef()
 

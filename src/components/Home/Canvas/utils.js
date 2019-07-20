@@ -14,9 +14,9 @@ export const drawCanvas = canvas => {
   canvas.height = canvas.offsetHeight
   const cx = canvas.offsetWidth / 2
   const cy = canvas.offsetHeight / 2
-  let ra = Math.random() * Math.PI * 2
-  let ga = ra + 0.4
-  let ba = ra + 0.8
+  let ra = 255
+  let ga = 0
+  let ba = 0
   const cs = 0.01 + Math.random() * 0.05
   const numPoints = Math.round(10 + Math.random() * 50)
   const dist = (2 * Math.PI) / (numPoints - 1)
