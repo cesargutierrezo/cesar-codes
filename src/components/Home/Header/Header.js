@@ -4,7 +4,13 @@ import { media, TYPING_DELAY } from "../../../utils"
 
 import Text from "../../shared/Text/Text"
 import TypingList from "./Typing/Typing"
-import { Icons } from "./Icons/Icons"
+import IconList from "../../shared/IconList/IconList"
+
+import {
+  ReactIcon,
+  VueIcon,
+  AngularIcon,
+} from "../../../assets/images/vectors/index"
 
 const list = [
   `frontend engineer`,
@@ -12,6 +18,8 @@ const list = [
   `ui engineer`,
   `web developer`,
 ]
+
+const iconList = [ReactIcon, VueIcon, AngularIcon]
 
 const ContainerSt = styled.div`
   display: flex;
@@ -30,7 +38,7 @@ const Header = () => {
     <ContainerSt>
       <Text as="h1">César Gutiérrez Olivares</Text>
       <TypingList loop as="h3" delay={TYPING_DELAY} textList={list} />
-      <Icons size={50} />
+      <IconList icons={iconList} />
     </ContainerSt>
   )
 }

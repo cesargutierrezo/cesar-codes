@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import "./Layout.css"
+import NavBar from "../shared/NavBar/NavBar"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -22,7 +23,12 @@ const Layout = ({ children }) => {
   //   }
   // `)
 
-  return <main>{children}</main>
+  return (
+    <>
+      <NavBar />
+      <main>{children}</main>
+    </>
+  )
 }
 
 Layout.propTypes = {
