@@ -8,7 +8,7 @@ const NavSt = styled.nav`
   top: 0;
   display: flex;
   justify-content: flex-end;
-  padding: 1em 1em;
+  padding: 1em 1.5em;
   width: 100%;
 `
 
