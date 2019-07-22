@@ -1,9 +1,4 @@
 /**
- * Canvas update and fade interval
- */
-export const CANVAS_INTERVAL_DELAY = 3000
-
-/**
  * Draws canvas art
  * Taken from https://codepen.io/ge1doot/pen/KemEax and adapted to React
  * @param {HTMLCanvasElement} canvas - Canvas element reference
@@ -14,7 +9,7 @@ export const drawCanvas = canvas => {
   canvas.height = canvas.offsetHeight
   const cx = canvas.offsetWidth / 2
   const cy = canvas.offsetHeight / 2
-  let ra = 255
+  let ra = 204
   let ga = 0
   let ba = 0
   const cs = 0.01 + Math.random() * 0.05

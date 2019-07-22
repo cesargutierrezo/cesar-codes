@@ -8,7 +8,7 @@ const opacityAnim = keyframes`
     opacity: 0;
   }
   50% {
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
