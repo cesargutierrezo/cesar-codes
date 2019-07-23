@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Canvas } from "./Canvas/Canvas"
+import { Canvas } from "../Canvas/Canvas"
 import { HomeContent } from "./HomeContent/HomeContent"
 
 const SectionSt = styled.section`
