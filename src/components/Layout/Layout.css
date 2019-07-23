@@ -186,7 +186,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -614,6 +614,15 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper,
+main {
+  height: 100%;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

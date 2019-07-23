@@ -11,7 +11,7 @@ const IconContainerSt = styled.div`
   }
 `
 
-const Icons = ({ icons, fill, margin, size }) => (
+export const IconList = ({ icons, fill, margin, size }) => (
   <IconContainerSt margin={margin}>
     {icons.map(Icon => (
       <Icon width={size} height={size} key={uuid()} fill={fill} />
@@ -19,18 +19,16 @@ const Icons = ({ icons, fill, margin, size }) => (
   </IconContainerSt>
 )
 
-Icons.propTypes = {
+IconList.propTypes = {
   icons: PropTypes.arrayOf(PropTypes.func),
   fill: PropTypes.string,
   margin: PropTypes.arrayOf(PropTypes.string),
   size: PropTypes.number,
 }
 
-Icons.defaultProps = {
+IconList.defaultProps = {
   icons: [],
   fill: "#fff",
   margin: ["0.8em", "1em"],
   size: 50,
 }
-
-export default Icons

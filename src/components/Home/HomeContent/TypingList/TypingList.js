@@ -1,11 +1,11 @@
 import React from "react"
 import Typing from "react-typing-animation"
 import uuid from "uuid/v4"
-import Text from "../../../shared/Text/Text"
+import { Text } from "../../../Text/Text"
 
-const TypingList = ({ as, loop, delay, textList }) => (
+export const TypingList = ({ as, loop, delay, textList }) => (
   <Typing loop={loop}>
-    <Text as={as} inverted>
+    <Text as={as} color="#000" background="#fff">
       {textList.map(text => (
         <React.Fragment key={uuid()}>
           {text}
@@ -16,5 +16,3 @@ const TypingList = ({ as, loop, delay, textList }) => (
     </Text>
   </Typing>
 )
-
-export default TypingList

@@ -1,14 +1,18 @@
 import React from "react"
-import { Canvas } from "./Canvas/Canvas"
-import Header from "./Header/Header"
+import styled from "styled-components"
 
-const Home = () => {
+import { Canvas } from "./Canvas/Canvas"
+import { HomeContent } from "./HomeContent/HomeContent"
+
+const SectionSt = styled.section`
+  height: 100%;
+`
+
+export const Home = () => {
   return (
-    <>
+    <SectionSt>
       <Canvas />
-      <Header />
-    </>
+      <HomeContent />
+    </SectionSt>
   )
 }
-
-export default Home

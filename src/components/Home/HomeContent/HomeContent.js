@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { media, TYPING_DELAY } from "../../../utils"
 
-import Text from "../../shared/Text/Text"
-import TypingList from "./Typing/Typing"
-import IconList from "../../shared/IconList/IconList"
+import { Text } from "../../Text/Text"
+import { TypingList } from "./TypingList/TypingList"
+import { IconList } from "../../IconList/IconList"
 
 import {
   ReactIcon,
@@ -25,7 +25,7 @@ const ContainerSt = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   padding: 2em;
   ${media.md(`
@@ -33,14 +33,14 @@ const ContainerSt = styled.div`
   `)}
 `
 
-const Header = () => {
+export const HomeContent = () => {
   return (
     <ContainerSt>
-      <Text as="h1">César Gutiérrez Olivares</Text>
+      <Text as="h1" color="#fff">
+        César Gutiérrez Olivares
+      </Text>
       <TypingList loop as="h3" delay={TYPING_DELAY} textList={list} />
       <IconList icons={iconList} />
     </ContainerSt>
   )
 }
-
-export default Header

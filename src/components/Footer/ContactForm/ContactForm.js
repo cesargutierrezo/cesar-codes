@@ -6,7 +6,7 @@ const ButtonSt = styled.button`
   background-color: #000;
 `
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
@@ -41,5 +41,3 @@ const ContactForm = () => {
     </form>
   )
 }
-
-export default ContactForm

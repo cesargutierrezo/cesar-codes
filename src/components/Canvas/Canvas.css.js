@@ -23,7 +23,7 @@ export const CanvasSt = styled.canvas`
   margin: auto;
   opacity: ${p => p.opacity};
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   user-select: none;
   touch-action: none;
   animation: ${opacityAnim} ${p => p.fadeInterval}ms ease-in-out infinite;

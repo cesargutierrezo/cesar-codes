@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `César Gutiérrez - Frontend & Mobile Engineer`,
-    description: `César Gutiérrez - Frontend & Mobile Engineer`,
+    title: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
+    description: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
     author: `César Gutiérrez Olivares`,
   },
   plugins: [
@@ -18,12 +18,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
+        short_name: `cesar.codes`,
         start_url: `/`,
         background_color: `#000`,
         theme_color: `#000`,
-        display: `minimal-ui`,
+        display: `browser`,
         icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },

@@ -13,10 +13,8 @@ const ContainerSt = styled.footer`
   }
 `
 
-const WIP = () => (
+export const WIP = () => (
   <ContainerSt>
-    <code>/* work in progress */</code>
+    <code>{`/* work in progress */`}</code>
   </ContainerSt>
 )
-
-export default WIP

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
-import useInterval from "../../../hooks/useInterval"
+import useInterval from "../../hooks/useInterval"
 import { drawCanvas } from "./Canvas.utils"
-import { CANVAS_INTERVAL_DELAY } from "../../../utils"
+import { CANVAS_INTERVAL_DELAY } from "../../utils"
 import { CanvasSt } from "./Canvas.css"
 
 /**

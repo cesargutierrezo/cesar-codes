@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import ContactForm from "./ContactForm/ContactForm"
+import { ContactForm } from "./ContactForm/ContactForm"
 
 const FooterSt = styled.footer`
   background-color: #000;
@@ -8,10 +8,8 @@ const FooterSt = styled.footer`
   padding: 2em;
 `
 
-const Footer = () => (
+export const Footer = () => (
   <FooterSt>
     <ContactForm />
   </FooterSt>
 )
-
-export default Footer

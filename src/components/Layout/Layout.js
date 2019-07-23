@@ -5,14 +5,15 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import "./Layout.css"
-import NavBar from "../shared/NavBar/NavBar"
+import { Header } from "../Header/Header"
+import { Sidebar } from "../Sidebar/Sidebar"
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
   //     site {
@@ -23,10 +24,13 @@ const Layout = ({ children }) => {
   //   }
   // `)
 
+  const [sidebarOpen, toggleSidebar] = useState(false)
+
   return (
     <>
-      <NavBar />
-      <main>{children}</main>
+      <Header onToggle={toggleSidebar} />
+      <Sidebar open={sidebarOpen} onToggle={toggleSidebar} />
+      <main className="content">{children}</main>
     </>
   )
 }
@@ -34,5 +38,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
-
-export default Layout
