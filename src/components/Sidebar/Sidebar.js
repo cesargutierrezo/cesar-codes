@@ -6,9 +6,9 @@ import { NavLinks } from "../NavLinks/NavLinks"
 
 const ContainerSt = styled.div`
   height: 100%;
-  width: 90vw;
+  width: 80vw;
   background-color: #1a1a1a;
-  padding: 4em;
+  padding: 3em;
   display: flex;
   flex-flow: column;
   justify-content: center;

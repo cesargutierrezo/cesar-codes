@@ -27,8 +27,11 @@ const NavLinkContainerSt = styled.div`
 
 const SidebarButtonSt = styled.button`
   padding: 0;
+  background: none;
   transform: rotate(180deg);
   display: block;
+  outline: none;
+  border: none;
   ${media.md(`
     display: none;
   `)}
