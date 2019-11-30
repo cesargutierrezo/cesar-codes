@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
-    description: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
-    author: `César Gutiérrez Olivares`,
+    title: `Cesar Gutierrez - Frontend & Mobile Engineer`,
+    description: `Cesar Gutierrez - Frontend & Mobile Engineer`,
+    author: `Cesar Gutierrez`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `César Gutiérrez Olivares - Frontend & Mobile Engineer`,
+        name: `Cesar Gutierrez - Frontend & Mobile Engineer`,
         short_name: `cesar.codes`,
         start_url: `/`,
         background_color: `#000`,
