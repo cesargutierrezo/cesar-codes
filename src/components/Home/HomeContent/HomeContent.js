@@ -37,7 +37,7 @@ export const HomeContent = () => {
   return (
     <ContainerSt>
       <Text as="h1" color="#fff">
-        Cesar Gutierrez
+        César Gutiérrez Olivares
       </Text>
       <TypingList loop as="h3" delay={TYPING_DELAY} textList={list} />
       <IconList icons={iconList} />
