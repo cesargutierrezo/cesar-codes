@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `browser`,
-        icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -45,7 +45,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.svg$/, // See below to configure properly
+          include: /\.svg$/,
         },
       },
     },
