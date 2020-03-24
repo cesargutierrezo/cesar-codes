@@ -12,7 +12,6 @@ const breakpoints = {
   md: 768,
   lg: 1024,
   xl: 1280,
-  xxl: 1440,
 }
 
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {

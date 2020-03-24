@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import { NavLinks } from "../NavLinks/NavLinks"
 import { HamburgerIcon } from "../../assets/images/vectors/index"
@@ -17,7 +17,7 @@ const NavSt = styled.nav`
 
 const NavLinkContainerSt = styled.div`
   display: none;
-  ${media.md(`
+  ${media.md(css`
     display: block;
   `)}
   > a {
@@ -32,7 +32,7 @@ const SidebarButtonSt = styled.button`
   display: block;
   outline: none;
   border: none;
-  ${media.md(`
+  ${media.md(css`
     display: none;
   `)}
 `

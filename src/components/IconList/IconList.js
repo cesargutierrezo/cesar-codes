@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import uuid from "uuid/v4"
+import { v4 as uuid } from "uuid"
 
 const IconContainerSt = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import React from "react"
 import Typing from "react-typing-animation"
-import uuid from "uuid/v4"
+import { v4 as uuid } from "uuid"
 import { Text } from "../../../Text/Text"
 
 export const TypingList = ({ as, loop, delay, textList }) => (

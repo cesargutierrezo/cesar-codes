@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { media, TYPING_DELAY } from "../../../utils"
 
 import { Text } from "../../Text/Text"
@@ -26,9 +26,9 @@ const ContainerSt = styled.div`
   flex-flow: column;
   justify-content: center;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   padding: 2em;
-  ${media.md(`
+  ${media.md(css`
     align-items: center;
   `)}
 `

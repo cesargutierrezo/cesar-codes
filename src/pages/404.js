@@ -1,5 +1,5 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import Link from "gatsby-link"
 import { Layout } from "../components/Layout/Layout"
 import { SEO } from "../components/SEO/SEO"
@@ -12,16 +12,18 @@ const ContainerSt = styled.div`
   flex-flow: column;
   justify-content: center;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   padding: 2em;
-  ${media.md(`
+  ${media.md(css`
     align-items: center;
   `)}
 `
 
 const ButtonSt = styled(Link)`
   outline: none;
+  text-align: center;
   border: 2px solid #fff;
+  margin-top: 0.4em;
   text-decoration: none;
   padding: 0.5em 0.8em;
   border-radius: 4px;
@@ -40,7 +42,7 @@ const NotFoundPage = () => (
         404
       </Text>
       <Text as="h1" color="#fff">
-        Site not found
+        Lost?
       </Text>
       <ButtonSt to="/">
         <Text as="h3" color="#fff">

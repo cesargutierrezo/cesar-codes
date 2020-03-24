@@ -22,7 +22,7 @@ export const CanvasSt = styled.canvas`
   position: absolute;
   margin: auto;
   opacity: ${p => p.opacity};
-  width: 100vw;
+  width: 100%;
   height: 100%;
   user-select: none;
   touch-action: none;
