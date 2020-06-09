@@ -16,7 +16,7 @@ const links = [
   },
   {
     label: "cv",
-    href: "/downloads/cesar-gutierrez-cv-2019.pdf",
+    href: "/downloads/cesar-gutierrez-cv-2020.pdf",
     target: "_blank",
   },
   {
